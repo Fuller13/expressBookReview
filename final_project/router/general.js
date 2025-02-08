@@ -6,7 +6,9 @@ const public_users = express.Router();
 
 
 public_users.post("/register", (req,res) => {
-  //Write your code here
+  router.get("/",(req,res)=>{
+    // Send JSON response with formatted friends data
+    res.send(JSON.stringify(getAllBooks,null,4));
   return res.status(300).json({message: "Yet to be implemented"});
 });
 
